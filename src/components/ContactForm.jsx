@@ -27,18 +27,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-10 flex flex-col md:flex-row items-center">
+    <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-10 flex flex-wrap-reverse  md:flex-row items-center">
       {/* Left Side - Form */}
-      <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
-        <img
-          src="https://via.placeholder.com/300x250" // Replace with actual image URL
-          alt="Contact"
-          className="rounded-lg shadow-lg"
-        />
-      </div>
-      
-
-      {/* Right Side - Image */}
       <div className="w-full md:w-1/2">
         <h2 className="text-2xl font-semibold text-[#034D26]">Contact us</h2>
         <p className="text-gray-600 mb-4">Please fill out the form and we will reach out to you soon</p>
@@ -116,6 +106,17 @@ const ContactForm = () => {
             Submit
           </button>
         </form>
+      </div>
+      
+      
+
+      {/* Right Side - Image */}
+      <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
+        <img
+          src="https://via.placeholder.com/300x250" // Replace with actual image URL
+          alt="Contact"
+          className="rounded-lg shadow-lg"
+        />
       </div>
     </div>
   );

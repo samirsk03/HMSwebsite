@@ -2,6 +2,7 @@ import HeroHomeSection from "./Hero-home";
 import GlobalAccreditations from "./GlobalAccreditations";
 import InfoSection from "../infoSection";
 import ContactForm from "../ContactForm";
+import Events from './Events'
 
 const HomePage = () => {
   return (
@@ -18,7 +19,7 @@ const HomePage = () => {
         image="https://via.placeholder.com/300" // Replace with a real image URL
         reverse={false}
       />
-
+      <Events />
       <ContactForm />
     </div>
   );
